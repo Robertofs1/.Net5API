@@ -1,9 +1,9 @@
 ﻿using RestWithASPNETUdemy.Model;
 using System.Collections.Generic;
 
-namespace RestWithASPNETUdemy.Services
+namespace RestWithASPNETUdemy.BE
 {
-    public interface IPersonService
+    public interface IPersonBE
     {
         Person Create(Person person);
         Person FindByID(long id);
