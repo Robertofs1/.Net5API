@@ -136,3 +136,15 @@ C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithA
 C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.pdb
 C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.genruntimeconfig.cache
 C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\obj\Debug\net5.0\ref\RestWithASPNETUdemy.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Evolve.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\roberto.frisanco\workspace\RestWithASPNET\RestWithASPNETUdemy\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.File.dll
