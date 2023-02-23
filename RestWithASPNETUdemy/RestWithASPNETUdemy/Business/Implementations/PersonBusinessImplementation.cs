@@ -5,11 +5,10 @@ using RestWithASPNETUdemy.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
-namespace RestWithASPNETUdemy.BE.Implementations
+namespace RestWithASPNETUdemy.Business.Implementations
 {
-    public class PersonBusinessImplementation : IPersonBE
+    public class PersonBusinessImplementation : IPersonBusiness
     {
 
         private readonly IRepository<Person> _repository;
@@ -34,9 +33,7 @@ namespace RestWithASPNETUdemy.BE.Implementations
         // Method responsible to crete one new person
         public Person Create(Person person)
         {
-
             return _repository.Create(person);
-
         }
 
         // Method responsible for updating one person
@@ -48,8 +45,7 @@ namespace RestWithASPNETUdemy.BE.Implementations
         // Method responsible for deleting a person from an ID
         public void Delete(long id)
         {
-           _repository.Delete(id);
+            _repository.Delete(id);
         }
-
     }
 }
