@@ -15,6 +15,8 @@ using RestWithASPNETUdemy.Repository.Generic;
 using Microsoft.Net.Http.Headers;
 using RestWithASPNETUdemy.Hypermedia.Filters;
 using RestWithASPNETUdemy.Hypermedia.Enricher;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace RestWithASPNETUdemy
 {
@@ -32,12 +34,16 @@ namespace RestWithASPNETUdemy
                 .CreateLogger();
         }
 
-
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors(options => options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+                
+            }));
             services.AddControllers();
 
             var connection = Configuration["MySQLConnection:MySQLConnectionString"];
@@ -66,6 +72,21 @@ namespace RestWithASPNETUdemy
             //Versioning API
             services.AddApiVersioning();
 
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Rest Api with azure and Docker",
+                        Version = "v1",
+                        Description = "API RestFul",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Roberto Frisanco",
+                            Url = new Uri("https://github.com/Robertofs1")
+                        }
+                    });
+            });
+
             //Dependency Injection
             services.AddScoped<IPersonBusiness, PersonBusinessImplementation>();
             services.AddScoped<IBookBusiness, BookBusinessImplementation>();
@@ -85,6 +106,19 @@ namespace RestWithASPNETUdemy
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json",
+                    "REST API's From 0 to Azure with ASP.NET Core 5 and Docker - v1");
+            });
+
+            var option = new RewriteOptions();
+            option.AddRedirect("^$", "swagger");
+            app.UseRewriter(option);
 
             app.UseAuthorization();
 
